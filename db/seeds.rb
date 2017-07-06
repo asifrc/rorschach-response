@@ -8,4 +8,4 @@
 #
 #
 
-Response.create(image: 'someurl?id=1,2,3', description: 'its a cat')
+Response.create(image: '/inkblots/blot/4/0', description: 'its a cat')
