@@ -10,5 +10,8 @@ ADD . /app
 ENV PORT=4000
 EXPOSE 4000
 
+RUN bin/rails db:migrate RAILS_ENV=development && \
+    bin/rails db:seed RAILS_ENV=development
+
 ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server", "-b", "0.0.0.0"]
